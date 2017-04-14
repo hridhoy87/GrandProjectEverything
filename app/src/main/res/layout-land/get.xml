@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSend"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartActivityForResult"
+        android:background="@drawable/cool_buttons"
+        android:id="@+id/bSAFR"
+        android:layout_above="@+id/tvGot"
+        android:layout_toLeftOf="@+id/bSA"
+        android:layout_toStartOf="@+id/bSA"
+        android:layout_marginRight="68dp"
+        android:layout_marginEnd="68dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartActivity"
+        android:id="@+id/bSA"
+        android:layout_alignTop="@+id/bSAFR"
+        android:layout_alignRight="@+id/etSend"
+        android:layout_alignEnd="@+id/etSend"
+        android:layout_marginRight="102dp"
+        android:layout_marginEnd="102dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result"
+
+        android:id="@+id/tvGot"
+        android:textStyle="italic"
+        android:textSize="20pt"
+        android:paddingBottom="5dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
